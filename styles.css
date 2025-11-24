@@ -1,0 +1,41 @@
+:root {
+    --card-img-height: 180px;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+.product-img {
+    width: 100%;
+    height: var(--card-img-height);
+    object-fit: contain;
+    /* show whole image without cropping */
+    object-position: center;
+    display: block;
+    background-color: #f1f3f5;
+    /* neutral background for letterbox space */
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.rating-stars {
+    color: #f6c84c;
+}
+
+.offcanvas-body .overflow-auto {
+    max-height: 50vh;
+}
+
+.badge-qty {
+    min-width: 28px;
+}
+
+@media (max-width:576px) {
+    :root {
+        --card-img-height: 140px
+    }
+}
